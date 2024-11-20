@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f8f8f8, #9acee4); /* Light gray to dark gray */
+}
+
+.header .header-text
+{
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    font-weight: 800;
+    /* color: #F25E86; */
+}
+
+.header .header-text::after
+{
+    content: ".";
+    color: #F25E86;
+}
+
+.btn-container .press-text
+{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+.btn-container .gen-btn
+{
+    background-color: #F25E86;
+    color: black;
+    padding: 10px 15px;
+    border: 3px solid #F25E86;
+    transition: 0.4s all;
+}
+
+
+.btn-container .gen-btn:hover
+{
+    background-color: #658DA6;
+    color: rgb(246, 231, 231);
+}
+
+.quote-container
+{
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.quote-container.fade-out
+{
+    opacity: 0;
+}
+
+.quote-container .quote-text
+{
+    /* font-family: "Edu AU VIC WA NT Pre"; */
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: italic;
+    text-shadow: 2px 2px 2px gray; /* Shadow offset with no blur */
+}
+
+.quote-container .author-img
+{
+    width: 100px;
+}
+
+
+
+
+
+
+@media screen and (min-width:768px){
+    .header .header-text
+    {
+        font-size: 70px;
+    }
+
+    .btn-container .press-text
+    {
+        font-size: 20px;
+    }
+    .btn-container .gen-btn
+    {
+        padding: 15px 20px;
+    }
+    .quote-container .quote-text
+    {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (min-width:992px){
+
+    .btn-container .press-text
+    {
+        font-size: 25px;
+    }
+    .btn-container .gen-btn
+    {
+        padding: 20px 25px;
+    }
+    .quote-container .quote-text
+    {
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (min-width:1200px){
+    .quote-container .quote-text
+    {
+        font-size: 40px;
+    }
+}
